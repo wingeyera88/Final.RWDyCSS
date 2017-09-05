@@ -87,10 +87,32 @@ section img {
 
 .izquierda {
   margin-right: 15px;
+
+  /*Animación*/
+  transition: border 1s;
+  transition: box-shadow 1s;
+  transition: transform 1s;
+}
+
+.izquierda:hover {
+  box-shadow: 2px 2px #82c3a6;
+  border: 2px solid;
+  transform: rotate(10deg);
 }
 
 .derecha {
   margin-left: 15px;
+
+  /*Animación*/
+  transition: transform 2s;
+  transition: border 2s;
+  transition: transform 2s;
+}
+
+.derecha:hover {
+  transform: translate(20px, -5px);
+  border: 2px solid;
+  box-shadow: 2px 2px #82c3a6;
 }
 
 img {
