@@ -158,3 +158,29 @@ footer ul li {
   text-decoration: none;
   color: #000;
 }
+
+article {
+  color: #02010a;
+  background: #d5c75f;
+  border: 1px;
+  padding: 25px 40px;
+  list-style: upper-roman;
+  text-align: justify;
+
+}
+
+article ol li {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 10px 20px;
+
+}
+
+.tituloterminos {
+  font-family: arial;
+  margin: 15px auto;
+  text-shadow: 1px 1px 1px #FFF;
+  text-decoration: underline;
+}
