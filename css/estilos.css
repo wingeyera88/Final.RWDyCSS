@@ -198,14 +198,14 @@ article ol li {
   text-decoration: underline;
 }
 
-#paisaje01{
+#paisaje01, #retrato01{
   filter: blur(10px);
 }
-#paisaje02, #paisaje04, #paisaje06 {
+#paisaje02, #paisaje04, #paisaje06, #retrato02, #retrato04,#retrato06 {
   filter: grayscale(1.0);
 }
 
-#paisaje03 {
+#paisaje03, #retrato03 {
   filter: sepia(0.9);
 }
 
