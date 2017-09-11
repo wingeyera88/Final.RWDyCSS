@@ -201,3 +201,10 @@ article ol li {
 #paisaje01{
   filter: blur(10px);
 }
+#paisaje02, #paisaje04, #paisaje06 {
+  filter: grayscale(1.0);
+}
+
+#paisaje03 {
+  filter: sepia(0.9);
+}
