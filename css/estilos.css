@@ -208,3 +208,15 @@ article ol li {
 #paisaje03 {
   filter: sepia(0.9);
 }
+
+@-webkit-keyframes slidein {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
