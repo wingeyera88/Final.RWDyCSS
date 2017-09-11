@@ -57,10 +57,23 @@ header nav a {
 }
 
 .main {
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+.fila01, .fila02 {
+  background: #d5c75f;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 33,33%;
+}
+
+.imagenpaisaje {
+  padding: 5px 15px;
 }
 
 section img {
@@ -183,4 +196,8 @@ article ol li {
   margin: 15px auto;
   text-shadow: 1px 1px 1px #FFF;
   text-decoration: underline;
+}
+
+#paisaje01{
+  filter: blur(10px);
 }
