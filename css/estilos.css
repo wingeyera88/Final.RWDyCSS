@@ -12,8 +12,7 @@ body {
 
 .contenido {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: auto;
   max-width: 1000px;
   width: 100%;
@@ -26,24 +25,27 @@ header {
   border-radius: 12px 12px 0px 0px;
   color: #fff;
   font-size: 2em;
+  margin-left: auto;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 #encabezado {
   text-shadow: 2px 2px #02010a;
+  display: flex;
+  width: 50%;
+  flex-flow: wrap column;
+  flex-grow: 1;
 }
 
 header nav {
-  width: 40%;
+  width: 50%;
   font-size: 0.8em;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -59,7 +61,7 @@ header nav a {
 .main {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .fila01, .fila02 {
@@ -72,7 +74,7 @@ header nav a {
   width: 33,33%;
 }
 
-.imagenpaisaje {
+.imagenpaisaje, .imagenretrato {
   padding: 5px 15px;
 }
 
@@ -219,4 +221,70 @@ article ol li {
   100% {
     margin-top: 0%;
   }
+}
+
+@media screen and (min-width:421px) and (max-width:900px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #imagencentral, #imagensecundaria, .fila01, .fila02 {
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
+  .fila01, .fila02, #mainpaisajes, #mainretratos {
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .izquierda, .derecha {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .imagenpaisaje, .imagenretrato {
+    padding: 20px;
+  }
+
+  footer {
+    flex-flow: row wrap;
+  }
+
+}
+
+@media screen and (max-width:420px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+
+  }
+  #encabezado, #menudenavegacion {
+    flex-flow: row nowrap;
+    margin: auto;
+  }
+
+    #imagencentral, #imagensecundaria, .fila01, .fila02 {
+      flex-flow: column wrap;
+      width: 100%;
+    }
+
+    .fila01, .fila02, #mainpaisajes, #mainretratos {
+      margin: 0 auto;
+      padding: 0px;
+    }
+
+    .izquierda, .derecha {
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    .imagenpaisaje, .imagenretrato {
+      padding: 20px;
+    }
+
+    footer {
+      flex-direction: column;
+    }
 }
