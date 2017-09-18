@@ -158,6 +158,11 @@ footer ul li {
   margin-top: 5px;
   font-weight: bolder;
   text-shadow: 0.8px 0.8px #FFF;
+
+}
+
+.social h2 {
+  text-indent: -30px;
 }
 
 #fbicon {
