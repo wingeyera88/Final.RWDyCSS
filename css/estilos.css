@@ -160,6 +160,18 @@ footer ul li {
   text-shadow: 0.8px 0.8px #FFF;
 }
 
+#fbicon {
+  list-style-image: url("../images/facebookicon.png");
+}
+
+#twicon {
+  list-style-image: url("../images/twittericon.png");
+}
+
+#igicon {
+  list-style-image: url("../images/instagramicon.jpg");
+}
+
 .linknav {
   text-decoration: none;
   color: #fff;
